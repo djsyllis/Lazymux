@@ -842,10 +842,10 @@ def DDosy():
 	backtomenu_option()
 
 def getAllModule(category):
+	global allmodule
+	allmodule = 1
 	print "   Installing all "+category+" Modules on LazyMux ...\n"
 	os.system('rm -rf '+category+' && mkdir '+category+' && cd '+category+' ')
-    global allmodule
-    allmodule = 1
 	if category == "Information_Gathering":
 		nmap()
 		red_hawk()
