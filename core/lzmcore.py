@@ -829,3 +829,10 @@ def hpb():
 	os.system('rm html_0.1_all.deb')
 	print "###### Type 'hpb' to start."
 	backtomenu_option()
+
+def DDosy():
+	print '\n###### Installing DDOSy'
+	install_pacakage('apt', ['python2', 'git'])
+	os.system('git clone https://github.com/Sanix-Darker/DDosy')
+	os.system('mv DDosy ~')
+	backtomenu_option()

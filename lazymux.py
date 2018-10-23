@@ -196,6 +196,7 @@ def main():
 		print "    [08] Black Hydra"
 		print "    [09] Xshell"
 		print "    [10] santet-online\n"
+		print "    [11] DDosy"
 		print "    [00] Back to main menu\n"
 		stresstest = raw_input("lzmx > ")
 		
@@ -219,6 +220,8 @@ def main():
 			xshell()
 		elif stresstest == "10":
 			sanlen()
+		elif stresstest == "11":
+			DDosy()
 		elif stresstest == "00" or stresstest == "0":
 			restart_program()
 		else:

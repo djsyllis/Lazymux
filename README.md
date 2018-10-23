@@ -19,3 +19,7 @@ sh install.sh
 # OR
 ./install.sh
 ```
+
+#### Contributors
+• [Gameye98](https://github.com/Gameye98)
+• [Sanix-darker](https://github.com/Sanix-Darker)
