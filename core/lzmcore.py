@@ -19,7 +19,7 @@ backtomenu_banner = """
 """
 allmodule = 0
 def install_pacakage(installer, packs):
-	if installer == 'apt':
+	if installer == 'apt' and allmodule == 0:
 		os.system('apt update && apt upgrade')
 	for v in packs:
 		os.system(installer+' install ' + v)
@@ -48,6 +48,7 @@ def backtomenu_option():
 			time.sleep(2)
 			restart_program()
 	else:
+		os.system('apt update && apt upgrade')
 		print '###### Processing...\n'
 
 def banner():
