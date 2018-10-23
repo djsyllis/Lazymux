@@ -583,66 +583,60 @@ def ecode():
 def hashzer():
 	print '\n###### Installing Hashzer'
 	install_pacakage('apt', ['python2', 'git'])
-	os.system('pip2 install requests')
+	install_pacakage('pip2', ['requests'])
 	os.system('git clone https://github.com/Anb3rSecID/Hashzer')
 	os.system('mv Hashzer ~')
 	backtomenu_option()
 
 def xsstrike():
 	print '\n###### Installing XSStrike'
-	os.system('apt update && apt upgrade')
-	os.system('apt install git python2')
-	os.system('pip2 install fuzzywuzzy prettytable mechanize HTMLParser')
+	install_pacakage('apt', ['python2', 'git'])
+	install_pacakage('pip2', ['fuzzywuzzy', 'prettytable', 'mechanize', 'HTMLParser'])
 	os.system('git clone https://github.com/UltimateHackers/XSStrike')
 	os.system('mv XSStrike ~')
 	backtomenu_option()
 
 def breacher():
 	print '\n###### Installing Breacher'
-	os.system('apt update && apt upgrade')
-	os.system('apt install git python2')
-	os.system('pip2 install requests argparse')
+	install_pacakage('apt', ['python2', 'git'])
+	install_pacakage('pip2', ['requests', 'argparse'])
 	os.system('git clone https://github.com/UltimateHackers/Breacher')
 	os.system('mv Breacher ~')
 	backtomenu_option()
 
 def stylemux():
 	print '\n###### Installing Termux-Styling'
-	os.system('apt update && apt upgrade')
-	os.system('apt install git')
+	install_pacakage('apt', ['git'])
 	os.system('git clone https://github.com/BagazMukti/Termux-Styling-Shell-Script')
 	os.system('mv Termux-Styling-Shell-Script ~')
 	backtomenu_option()
 
 def txtool():
 	print '\n###### Installing TXTool'
-	os.system('apt update && apt upgrade')
-	os.system('apt install git python2 nmap php curl')
-	os.system('pip2 install requests')
+	install_pacakage('apt', ['git', 'python2', 'nmap', 'php', 'curl'])
+	install_pacakage('pip2', ['requests'])
 	os.system('git clone https://github.com/kuburan/txtool')
 	os.system('mv txtool ~')
 	backtomenu_option()
 
 def passgencvar():
 	print '\n###### Installing PassGen'
-	os.system('apt update && apt upgrade')
-	os.system('apt install git php')
+	install_pacakage('apt', ['git', 'php'])
 	os.system('git clone https://github.com/Cvar1984/PassGen')
 	os.system('mv PassGen ~')
 	backtomenu_option()
 
 def owscan():
 	print '\n###### Installing OWScan'
-	os.system('apt update && apt upgrade')
-	os.system('apt install git php')
+	install_pacakage('apt', ['git', 'php'])
 	os.system('git clone https://github.com/Gameye98/OWScan')
 	os.system('mv OWScan ~')
 	backtomenu_option()
 
 def sanlen():
 	print '\n###### Installing santet-online'
-	os.system('apt update && apt upgrade')
-	os.system('apt install git python2 && pip2 install requests')
+	install_pacakage('apt', ['git', 'python2'])
+	install_pacakage('pip2', ['requests'])
 	os.system('git clone https://github.com/Gameye98/santet-online')
 	os.system('mv santet-online ~')
 	backtomenu_option()
@@ -657,100 +651,91 @@ def spazsms():
 
 def hasher():
 	print '\n###### Installing Hasher'
-	os.system('apt update && apt upgrade')
-	os.system('apt install git python2 && pip2 install passlib binascii progressbar')
+	install_pacakage('apt', ['git', 'python2'])
+	install_pacakage('pip2', ['passlib', 'binascii', 'progressbar'])
 	os.system('git clone https://github.com/ciku370/hasher')
 	os.system('mv hasher ~')
 	backtomenu_option()
 
 def hashgenerator():
 	print '\n###### Installing Hash-Generator'
-	os.system('apt update && apt upgrade')
-	os.system('apt install git python2 && pip2 install passlib progressbar')
+	install_pacakage('apt', ['git', 'python2'])
+	install_pacakage('pip2', ['passlib', 'progressbar'])
 	os.system('git clone https://github.com/ciku370/hash-generator')
 	os.system('mv hash-generator ~')
 	backtomenu_option()
 
 def kodork():
 	print '\n###### Installing ko-dork'
-	os.system('apt update && apt upgrade')
-	os.system('apt install git python2 && pip2 install urllib2')
+	install_pacakage('apt', ['git', 'python2'])
+	install_pacakage('pip2', ['urllib2'])
 	os.system('git clone https://github.com/ciku370/ko-dork')
 	os.system('mv ko-dork ~')
 	backtomenu_option()
 
 def snitch():
 	print '\n###### Installing snitch'
-	os.system('apt update && apt upgrade')
-	os.system('apt install git python2')
+	install_pacakage('apt', ['git', 'python2'])
 	os.system('git clone https://github.com/Smaash/snitch')
 	os.system('mv snitch ~')
 	backtomenu_option()
 
 def osif():
 	print '\n###### Installing OSIF'
-	os.system('apt update && apt upgrade')
-	os.system('apt install git python2')
-	os.system('pip2 install requests')
+	install_pacakage('apt', ['git', 'python2'])
+	install_pacakage('pip2', ['requests'])
 	os.system('git clone https://github.com/ciku370/OSIF')
 	os.system('mv OSIF ~')
 	backtomenu_option()
 
 def nk26():
 	print '\n###### Installing nk26'
-	os.system('apt update && apt upgrade')
-	os.system('apt install git php')
-	os.system('git clone ')
+	install_pacakage('apt', ['git', 'php'])
+	os.system('git clone https://github.com/milio48/nk26')
 	os.system('mv nk26 ~')
 	backtomenu_option()
 
 def devploit():
 	print '\n###### Installing Devploit'
-	os.system('apt update && apt upgrade')
-	os.system('apt install python2 git && pip2 install urllib2')
+	install_pacakage('apt', ['git', 'python2'])
+	install_pacakage('pip2', ['urllib2'])
 	os.system('git clone https://github.com/joker25000/Devploit')
 	os.system('mv Devploit ~')
 	backtomenu_option()
 
 def hasherdotid():
 	print '\n###### Installing Hasherdotid'
-	os.system('apt update && apt upgrade')
-	os.system('apt install python2 git')
+	install_pacakage('apt', ['git', 'python2'])
 	os.system('git clone https://github.com/galauerscrew/hasherdotid')
 	os.system('mv hasherdotid ~')
 	backtomenu_option()
 
 def namechk():
 	print '\n###### Installing Namechk'
-	os.system('apt update && apt upgrade')
-	os.system('apt install git')
+	install_pacakage('apt', ['git'])
 	os.system('git clone https://github.com/HA71/Namechk')
 	os.system('mv Namechk ~')
 	backtomenu_option()
 
 def xlPy():
 	print '\n###### Installing xl-py'
-	os.system('apt update && apt upgrade')
-	os.system('apt install python git')
+	install_pacakage('apt', ['git', 'python'])
 	os.system('git clone https://github.com/albertoanggi/xl-py')
 	os.system('mv xl-py ~')
 	backtomenu_option()
 
 def beanshell():
 	print '\n###### Installing Beanshell'
-	os.system('apt update && apt upgrade')
-	os.system('apt install dpkg wget')
+	install_pacakage('apt', ['dpkg', 'wget'])
 	os.system('wget https://github.com/amsitlab/amsitlab.github.io/raw/master/dists/termux/amsitlab/binary-all/beanshell_2.04_all.deb')
 	os.system('dpkg -i beanshell_2.04_all.deb')
 	os.system('rm beanshell_2.04_all.deb')
-	print '###### Done'
 	print "###### Type 'bsh' to start."
 	backtomenu_option()
 
 def msfpg():
 	print '\n###### Installing MSF-Pg'
-	os.system('apt update && apt upgrade')
-	os.system('apt install git')
+	install_pacakage('apt', ['git'])
 	os.system('git clone https://github.com/haxzsadik/MSF-Pg')
 	os.system('mv MSF-Pg ~')
 	print "###### Done"
@@ -758,8 +743,8 @@ def msfpg():
 
 def touchurl():
 	print '\n###### Installing TouchURL'
-	os.system('apt update && apt upgrade')
-	os.system('apt install python git && pip install parse colorama')
+	install_pacakage('apt', ['git', 'python'])
+	install_pacakage('pip', ['colorama', 'parse'])
 	os.system('git clone https://github.com/SkyKnight-Team/TouchUrl')
 	os.system('mv TouchUrl ~')
 	print "###### Done"
@@ -767,8 +752,7 @@ def touchurl():
 
 def webconn():
 	print '\n###### Installing WebConn'
-	os.system('apt update && apt upgrade')
-	os.system('apt install python git')
+	install_pacakage('apt', ['git', 'python'])
 	os.system('git clone https://github.com/SkyKnight-Team/WebConn')
 	os.system('mv WebConn ~')
 	print "###### Done"
@@ -776,84 +760,72 @@ def webconn():
 
 def binploit():
 	print '\n###### Installing Binary Exploitation'
-	os.system('apt update && apt upgrade')
-	os.system('apt install gdb radare2 ired ddrescue bin-utils yasm strace ltrace cdb hexcurse memcached llvmdb')
-	print "###### Done"
+	install_pacakage('apt', ['gdb', 'radare2', 'ired', 'ddrescue', 'bin-utils', 'yasm', 'strace', 'ltrace', 'cdb', 'hexcurse', 'memcached', 'llvmdb'])
 	print "###### Tutorial: https://youtu.be/3NTXFUxcKPc"
 	backtomenu_option()
 
 def textr():
 	print '\n###### Installing Textr'
-	os.system('apt update && apt upgrade')
-	os.system('apt install dpkg wget')
+	install_pacakage('apt', ['dpkg', 'wget'])
 	os.system('wget https://raw.githubusercontent.com/amsitlab/textr/master/textr_1.0_all.deb')
 	os.system('dpkg -i textr_1.0_all.deb')
 	os.system('rm textr_1.0_all.deb')
-	print '###### Done'
 	print "###### Type 'textr' to start."
 	backtomenu_option()
 
 def apsca():
 	print '\n###### Installing ApSca'
-	os.system('apt update && apt upgrade')
-	os.system('apt install dpkg wget')
+	install_pacakage('apt', ['dpkg', 'wget'])
 	os.system('wget https://raw.githubusercontent.com/BlackHoleSecurity/apsca/master/apsca_0.1_all.deb')
 	os.system('dpkg -i apsca_0.1_all.deb')
 	os.system('rm apsca_0.1_all.deb')
-	print '###### Done'
 	print "###### Type 'apsca' to start."
 	backtomenu_option()
 
 def amox():
 	print '\n###### Installing amox'
-	os.system('apt update && apt upgrade')
-	os.system('apt install dpkg wget')
+	install_pacakage('apt', ['dpkg', 'wget'])
 	os.system('wget https://gitlab.com/dtlily/amox/raw/master/amox_1.0_all.deb')
 	os.system('dpkg -i amox_1.0_all.deb')
 	os.system('rm amox_1.0_all.deb')
-	print '###### Done'
 	print "###### Type 'amox' to start."
 	backtomenu_option()
 
 def fade():
 	print '\n###### Installing FaDe'
-	os.system('apt update && apt upgrade')
-	os.system('apt install git python2 && pip2 install requests')
+	install_pacakage('apt', ['python2', 'git'])
+	install_pacakage('pip2', ['requests'])
 	os.system('git clone https://github.com/Gameye98/FaDe')
 	os.system('mv FaDe ~')
 	backtomenu_option()
 
 def ginf():
 	print '\n###### Installing GINF'
-	os.system('apt update && apt upgrade')
-	os.system('apt install git php')
+	install_pacakage('apt', ['git', 'php'])
 	os.system('git clone https://github.com/Gameye98/GINF')
 	os.system('mv GINF ~')
 	backtomenu_option()
 
 def auxile():
 	print '\n###### Installing AUXILE'
-	os.system('apt update && apt upgrade')
-	os.system('apt install git python2 && pip2 install requests bs4 pexpect')
+	install_pacakage('apt', ['git', 'python2'])
+	install_pacakage('pip2', ['requests', 'bs4', 'pexpect'])
 	os.system('git clone https://github.com/CiKu370/AUXILE')
 	os.system('mv AUXILE ~')
 	backtomenu_option()
 
 def inther():
 	print '\n###### Installing inther'
-	os.system('apt update && apt upgrade')
-	os.system('apt install git ruby')
+	install_pacakage('apt', ['git', 'ruby'])
 	os.system('git clone https://github.com/Gameye98/inther')
 	os.system('mv inther ~')
 	backtomenu_option()
 
 def hpb():
 	print '\n###### Installing HPB'
-	os.system('apt update && apt upgrade')
-	os.system('apt install dpkg wget')
+	install_pacakage('apt', ['dpkg', 'wget'])
 	os.system('wget https://raw.githubusercontent.com/Cvar1984/HPB/master/html_0.1_all.deb')
 	os.system('dpkg -i html_0.1_all.deb')
 	os.system('rm html_0.1_all.deb')
-	print '###### Done'
 	print "###### Type 'hpb' to start."
 	backtomenu_option()
