@@ -5,7 +5,7 @@ Lazymux tools installer is very easy to use, only provided for lazy termux users
 <img src="core/lazymux2.png">
 
 ### Requirements
-• Linux environment (For all features work perfectly)<br>
+• Linux environment<br>
 • Python 2.x<br>
 • git<br>
 

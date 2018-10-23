@@ -64,21 +64,24 @@ def red_hawk():
 	print '\n###### Installing RED HAWK'
 	install_pacakage('apt', ['git', 'php'])
 	os.system('git clone https://github.com/Tuhinshubhra/RED_HAWK')
-	os.system('mv RED_HAWK ~')
+	if allmodule == 0:
+		os.system('mv RED_HAWK ~')
 	backtomenu_option()
 
 def dtect():
 	print '\n###### Installing D-Tect'
 	install_pacakage('apt', ['python2', 'git'])
 	os.system('git clone https://github.com/shawarkhanethicalhacker/D-TECT')
-	os.system('mv D-TECT ~')
+	if allmodule == 0:
+		os.system('mv D-TECT ~')
 	backtomenu_option()
 
 def sqlmap():
 	print '\n###### Installing sqlmap'
 	install_pacakage('apt', ['python2', 'git'])
 	os.system('git clone https://github.com/sqlmapproject/sqlmap')
-	os.system('mv sqlmap ~')
+	if allmodule == 0:
+		os.system('mv sqlmap ~')
 	backtomenu_option()
 
 def infoga():
@@ -86,14 +89,16 @@ def infoga():
 	install_pacakage('apt', ['python2', 'git'])
 	install_pacakage('pip2', ['requests', 'urllib3', 'urlparse'])
 	os.system('git clone https://github.com/m4ll0k/Infoga')
-	os.system('mv Infoga ~')
+	if allmodule == 0:
+		os.system('mv Infoga ~')
 	backtomenu_option()
 
 def reconDog():
 	print '\n###### Installing ReconDog'
 	install_pacakage('apt', ['python2', 'git'])
 	os.system('git clone https://github.com/UltimateHackers/ReconDog')
-	os.system('mv ReconDog ~')
+	if allmodule == 0:
+		os.system('mv ReconDog ~')
 	backtomenu_option()
 
 def androZenmap():
@@ -101,7 +106,8 @@ def androZenmap():
 	install_pacakage('apt', ['nmap', 'curl'])
 	os.system('curl -O http://override.waper.co/files/androzenmap.txt')
 	os.system('mkdir ~/AndroZenmap')
-	os.system('mv androzenmap.txt ~/AndroZenmap/androzenmap.sh')
+	if allmodule == 0:
+		os.system('mv androzenmap.txt ~/AndroZenmap/androzenmap.sh')
 	backtomenu_option()
 
 def sqlmate():
@@ -109,14 +115,16 @@ def sqlmate():
 	install_pacakage('apt', ['python2', 'git'])
 	install_pacakage('pip2', ['mechanize', 'bs4', 'HTMLparser', 'argparse', 'requests', 'urlparse2'])
 	os.system('git clone https://github.com/UltimateHackers/sqlmate')
-	os.system('mv sqlmate ~')
+	if allmodule == 0:
+		os.system('mv sqlmate ~')
 	backtomenu_option()
 
 def astraNmap():
 	print '\n###### Installing AstraNmap'
 	install_pacakage('apt', ['nmap', 'git'])
 	os.system('git clone https://github.com/Gameye98/AstraNmap')
-	os.system('mv AstraNmap ~')
+	if allmodule == 0:
+		os.system('mv AstraNmap ~')
 	backtomenu_option()
 
 def wtf():
@@ -124,14 +132,16 @@ def wtf():
 	install_pacakage('apt', ['python2', 'git'])
 	install_pacakage('pip2', ['bs4', 'requests','HTMLParser','urlparse','mechanize','argparse'])
 	os.system('git clone https://github.com/Xi4u7/wtf')
-	os.system('mv wtf ~')
+	if allmodule == 0:
+		os.system('mv wtf ~')
 	backtomenu_option()
 
 def easyMap():
 	print '\n###### Installing Easymap'
 	install_pacakage('apt', ['php', 'git'])
 	os.system('git clone https://github.com/Cvar1984/Easymap')
-	os.system('mv Easymap ~')
+	if allmodule == 0:
+		os.system('mv Easymap ~')
 	os.system('cd ~/Easymap && sh install.sh')
 	backtomenu_option()
 
@@ -139,7 +149,8 @@ def xd3v():
 	print '\n###### Installing XD3v'
 	install_pacakage('apt', ['curl'])
 	os.system('curl -k -O https://gist.github.com/Gameye98/92035588bd0228df6fb7fa77a5f26bc2/raw/f8e73cd3d9f2a72bd536087bb6ba7bc8baef7d1d/xd3v.sh')
-	os.system('mv xd3v.sh ~/../usr/bin/xd3v && chmod +x ~/../usr/bin/xd3v')
+	if allmodule == 0:
+		os.system('mv xd3v.sh ~/../usr/bin/xd3v && chmod +x ~/../usr/bin/xd3v')
 	print '###### Done'
 	print "###### Type 'xd3v' to start."
 	backtomenu_option()
@@ -177,7 +188,8 @@ def striker():
 	print '\n###### Installing Striker'
 	install_pacakage('apt', ['python2', 'git'])
 	os.system('git clone https://github.com/UltimateHackers/Striker')
-	os.system('mv Striker ~')
+	if allmodule == 0:
+		os.system('mv Striker ~')
 	os.system('cd ~/Striker && pip2 install -r requirements.txt')
 	backtomenu_option()
 
@@ -185,28 +197,32 @@ def dsss():
 	print '\n###### Installing DSSS'
 	install_pacakage('apt', ['python2', 'git'])
 	os.system('git clone https://github.com/stamparm/DSSS')
-	os.system('mv DSSS ~')
+	if allmodule == 0:
+		os.system('mv DSSS ~')
 	backtomenu_option()
 
 def sqliv():
 	print '\n###### Installing SQLiv'
 	install_pacakage('apt', ['python2', 'git'])
 	os.system('git clone https://github.com/Hadesy2k/sqliv')
-	os.system('mv sqliv ~')
+	if allmodule == 0:
+		os.system('mv sqliv ~')
 	backtomenu_option()
 
 def sqlscan():
 	print '\n###### Installing sqlscan'
 	install_pacakage('apt', ['php', 'git'])
 	os.system('git clone http://www.github.com/Cvar1984/sqlscan')
-	os.system('mv sqlscan ~')
+	if allmodule == 0:
+		os.system('mv sqlscan ~')
 	backtomenu_option()
 
 def wordpreSScan():
 	print '\n###### Installing Wordpresscan'
 	install_pacakage('apt', ['python2', 'python2-dev', 'clang', 'libxml2-dev', 'libxml2-utils', 'libxslt-dev'])
 	os.system('git clone https://github.com/swisskyrepo/Wordpresscan')
-	os.system('mv Wordpresscan ~')
+	if allmodule == 0:
+		os.system('mv Wordpresscan ~')
 	os.system('cd ~/Wordpresscan && pip2 install -r requirements.txt')
 	backtomenu_option()
 
@@ -214,7 +230,8 @@ def wpscan():
 	print '\n###### Installing WPScan'
 	install_pacakage('apt', ['ruby', 'curl'])
 	os.system('git clone https://github.com/wpscanteam/wpscan')
-	os.system('mv wpscan ~ && cd ~/wpscan')
+	if allmodule == 0:
+		os.system('mv wpscan ~ && cd ~/wpscan')
 	os.system('gem install bundle && bundle config build.nokogiri --use-system-libraries && bundle install && ruby wpscan.rb --update')
 	backtomenu_option()
 
@@ -223,7 +240,8 @@ def wordpresscan():
 	install_pacakage('apt', ['nmap', 'figlet', 'git'])
 	os.system('git clone https://github.com/silverhat007/termux-wordpresscan')
 	os.system('cd termux-wordpresscan && chmod +x * && sh install.sh')
-	os.system('mv termux-wordpresscan ~')
+	if allmodule == 0:
+		os.system('mv termux-wordpresscan ~')
 	print '###### Done'
 	print "###### Type 'wordpresscan' to start."
 	backtomenu_option()
@@ -233,21 +251,24 @@ def routersploit():
 	install_pacakage('apt', ['python2', 'git'])
 	install_pacakage('pip2', ['requests'])
 	os.system('git clone https://github.com/reverse-shell/routersploit')
-	os.system('mv routersploit ~;cd ~/routersploit;pip2 install -r requirements.txt;termux-fix-shebang rsf.py')
+	if allmodule == 0:
+		os.system('mv routersploit ~;cd ~/routersploit;pip2 install -r requirements.txt;termux-fix-shebang rsf.py')
 	backtomenu_option()
 
 def torshammer():
 	print '\n###### Installing Torshammer'
 	install_pacakage('apt', ['python2', 'git'])
 	os.system('git clone https://github.com/dotfighter/torshammer')
-	os.system('mv torshammer ~')
+	if allmodule == 0:
+		os.system('mv torshammer ~')
 	backtomenu_option()
 
 def slowloris():
 	print '\n###### Installing Slowloris'
 	install_pacakage('apt', ['python2', 'git'])
 	os.system('git clone https://github.com/gkbrk/slowloris')
-	os.system('mv slowloris ~')
+	if allmodule == 0:
+		os.system('mv slowloris ~')
 	backtomenu_option()
 
 def fl00d12():
@@ -256,21 +277,24 @@ def fl00d12():
 	os.system('mkdir ~/fl00d')
 	os.system('wget http://override.waper.co/files/fl00d.apk')
 	os.system('wget http://override.waper.co/files/fl00d2.apk')
-	os.system('mv fl00d.apk ~/fl00d/fl00d.py;mv fl00d2.apk ~/fl00d/fl00d2.py')
+	if allmodule == 0:
+		os.system('mv fl00d.apk ~/fl00d/fl00d.py;mv fl00d2.apk ~/fl00d/fl00d2.py')
 	backtomenu_option()
 
 def goldeneye():
 	print '\n###### Installing GoldenEye'
 	install_pacakage('apt', ['python2', 'git'])
 	os.system('git clone https://github.com/jseidl/GoldenEye')
-	os.system('mv GoldenEye ~')
+	if allmodule == 0:
+		os.system('mv GoldenEye ~')
 	backtomenu_option()
 
 def xerxes():
 	print '\n###### Installing Xerxes'
 	install_pacakage('apt', ['clang', 'git'])
 	os.system('git clone https://github.com/zanyarjamal/xerxes')
-	os.system('mv xerxes ~')
+	if allmodule == 0:
+		os.system('mv xerxes ~')
 	os.system('cd ~/xerxes && clang xerxes.c -o xerxes')
 	backtomenu_option()
 
@@ -278,7 +302,8 @@ def planetwork_ddos():
 	print '\n###### Installing Planetwork-DDOS'
 	install_pacakage('apt', ['python2', 'git'])
 	os.system('git clone https://github.com/Hydra7/Planetwork-DDOS')
-	os.system('mv Planetwork-DDOS ~')
+	if allmodule == 0:
+		os.system('mv Planetwork-DDOS ~')
 	backtomenu_option()
 
 def hydra():
@@ -290,28 +315,32 @@ def black_hydra():
 	print '\n###### Installing Black Hydra'
 	install_pacakage('apt', ['python2', 'git', 'hydra'])
 	os.system('git clone https://github.com/Gameye98/Black-Hydra')
-	os.system('mv Black-Hydra ~')
+	if allmodule == 0:
+		os.system('mv Black-Hydra ~')
 	backtomenu_option()
 
 def cupp():
 	print '\n###### Installing Cupp'
 	install_pacakage('apt', ['python2', 'git'])
 	os.system('git clone https://github.com/Mebus/cupp')
-	os.system('mv cupp ~')
+	if allmodule == 0:
+		os.system('mv cupp ~')
 	backtomenu_option()
 
 def leethash():
 	print '\n###### Installing 1337Hash'
 	install_pacakage('apt', ['python2', 'git'])
 	os.system('git clone https://github.com/Gameye98/1337Hash')
-	os.system('mv 1337Hash ~')
+	if allmodule == 0:
+		os.system('mv 1337Hash ~')
 	backtomenu_option()
 
 def hash_buster():
 	print '\n###### Installing Hash-Buster'
 	install_pacakage('apt', ['python2', 'git'])
 	os.system('git clone https://github.com/UltimateHackers/Hash-Buster')
-	os.system('mv Hash-Buster ~')
+	if allmodule == 0:
+		os.system('mv Hash-Buster ~')
 	backtomenu_option()
 
 def instaHack():
@@ -319,14 +348,16 @@ def instaHack():
 	install_pacakage('apt', ['python2', 'git'])
 	install_pacakage('pip2', ['requests'])
 	os.system('git clone https://github.com/avramit/instahack')
-	os.system('mv instahack ~')
+	if allmodule == 0:
+		os.system('mv instahack ~')
 	backtomenu_option()
 
 def indonesian_wordlist():
 	print '\n###### Installing indonesian-wordlist'
 	install_pacakage('apt', ['git'])
 	os.system('git clone https://github.com/geovedi/indonesian-wordlist')
-	os.system('mv indonesian-wordlist ~')
+	if allmodule == 0:
+		os.system('mv indonesian-wordlist ~')
 	backtomenu_option()
 
 def facebook_bruteForce():
@@ -336,7 +367,8 @@ def facebook_bruteForce():
 	os.system('mkdir ~/facebook-brute')
 	os.system('wget http://override.waper.co/files/facebook.apk')
 	os.system('wget http://override.waper.co/files/password.apk')
-	os.system('mv facebook.apk ~/facebook-brute/facebook.py;mv password.apk ~/facebook-brute/password.txt')
+	if allmodule == 0:
+		os.system('mv facebook.apk ~/facebook-brute/facebook.py;mv password.apk ~/facebook-brute/password.txt')
 	backtomenu_option()
 
 def facebook_BruteForce():
@@ -346,7 +378,8 @@ def facebook_BruteForce():
 	os.system('wget http://override.waper.co/files/facebook2.apk')
 	os.system('wget http://override.waper.co/files/password.apk')
 	os.system('mkdir ~/facebook-brute-2')
-	os.system('mv facebook2.apk ~/facebook-brute-2/facebook2.py && mv password.apk ~/facebook-brute-2/password.txt')
+	if allmodule == 0:
+		os.system('mv facebook2.apk ~/facebook-brute-2/facebook2.py && mv password.apk ~/facebook-brute-2/password.txt')
 	backtomenu_option()
 
 def fbBrute():
@@ -356,7 +389,8 @@ def fbBrute():
 	os.system('wget http://override.waper.co/files/facebook3.apk')
 	os.system('wget http://override.waper.co/files/password.apk')
 	os.system('mkdir ~/facebook-brute-3')
-	os.system('mv facebook3.apk ~/facebook-brute-3/facebook3.py && mv password.apk ~/facebook-brute-3/password.txt')
+	if allmodule == 0:
+		os.system('mv facebook3.apk ~/facebook-brute-3/facebook3.py && mv password.apk ~/facebook-brute-3/password.txt')
 	backtomenu_option()
 
 def webdav():
@@ -372,7 +406,8 @@ def xGans():
 	install_pacakage('apt', ['python2', 'curl'])
 	os.system('mkdir ~/xGans')
 	os.system('curl -O http://override.waper.co/files/xgans.txt')
-	os.system('mv xgans.txt ~/xGans/xgans.py')
+	if allmodule == 0:
+		os.system('mv xgans.txt ~/xGans/xgans.py')
 	backtomenu_option()
 
 def webmassploit():
@@ -387,7 +422,8 @@ def wpsploit():
 	print '\n###### Installing WPSploit'
 	install_pacakage('apt', ['python2', 'git'])
 	os.system('git clone git clone https://github.com/m4ll0k/wpsploit')
-	os.system('mv wpsploit ~')
+	if allmodule == 0:
+		os.system('mv wpsploit ~')
 	backtomenu_option()
 
 def sqldump():
@@ -403,7 +439,8 @@ def websploit():
 	install_pacakage('apt', ['git', 'python2'])
 	install_pacakage('pip2', ['scapy'])
 	os.system('git clone https://github.com/The404Hacking/websploit')
-	os.system('mv websploit ~')
+	if allmodule == 0:
+		os.system('mv websploit ~')
 	backtomenu_option()
 
 def sqlokmed():
@@ -411,7 +448,8 @@ def sqlokmed():
 	install_pacakage('apt', ['python2', 'git'])
 	install_pacakage('pip2', ['urllib2'])
 	os.system('git clone https://github.com/Anb3rSecID/sqlokmed')
-	os.system('mv sqlokmed ~')
+	if allmodule == 0:
+		os.system('mv sqlokmed ~')
 	backtomenu_option()
 
 def zones():
@@ -433,21 +471,24 @@ def commix():
 	print '\n###### Installing Commix'
 	install_pacakage('apt', ['python2', 'git'])
 	os.system('git clone https://github.com/commixproject/commix')
-	os.system('mv commix ~')
+	if allmodule == 0:
+		os.system('mv commix ~')
 	backtomenu_option()
 
 def brutal():
 	print '\n###### Installing Brutal'
 	install_pacakage('apt', ['git'])
 	os.system('git clone https://github.com/Screetsec/Brutal')
-	os.system('mv Brutal ~')
+	if allmodule == 0:
+		os.system('mv Brutal ~')
 	backtomenu_option()
 
 def a_rat():
 	print '\n###### Installing A-Rat'
 	install_pacakage('apt', ['git', 'python2'])
 	os.system('git clone https://github.com/Xi4u7/A-Rat')
-	os.system('mv A-Rat ~')
+	if allmodule == 0:
+		os.system('mv A-Rat ~')
 	backtomenu_option()
 
 def knockmail():
@@ -455,7 +496,8 @@ def knockmail():
 	install_pacakage('apt', ['git', 'python2'])
 	install_pacakage('pip2', ['validate_email', 'pyDNS'])
 	os.system('git clone https://github.com/4w4k3/KnockMail')
-	os.system('mv KnockMail ~')
+	if allmodule == 0:
+		os.system('mv KnockMail ~')
 	backtomenu_option()
 
 def spammer_grab():
@@ -463,14 +505,16 @@ def spammer_grab():
 	install_pacakage('apt', ['python2', 'git'])
 	install_pacakage('pip2', ['requests'])
 	os.system('git clone https://github.com/p4kl0nc4t/spammer-grab')
-	os.system('mv spammer-grab ~')
+	if allmodule == 0:
+		os.system('mv spammer-grab ~')
 	backtomenu_option()
 
 def hac():
 	print '\n###### Installing Hac'
 	install_pacakage('apt', ['php', 'git'])
 	os.system('git clone https://github.com/Cvar1984/Hac')
-	os.system('mv Hac ~')
+	if allmodule == 0:
+		os.system('mv Hac ~')
 	backtomenu_option()
 
 def spammer_email():
@@ -514,14 +558,16 @@ def ngrok():
 	print '\n###### Installing Ngrok'
 	install_pacakage('apt', ['git'])
 	os.system('git clone https://github.com/themastersunil/ngrok')
-	os.system('mv ngrok ~')
+	if allmodule == 0:
+		os.system('mv ngrok ~')
 	backtomenu_option()
 
 def sudo():
 	print '\n###### Installing sudo'
 	install_pacakage('apt', ['git', 'ncurses-utils'])
 	os.system('git clone https://github.com/st42/termux-sudo')
-	os.system('mv termux-sudo ~ && cd ~/termux-sudo && chmod 777 *')
+	if allmodule == 0:
+		os.system('mv termux-sudo ~ && cd ~/termux-sudo && chmod 777 *')
 	os.system('cat sudo > /data/data/com.termux/files/usr/bin/sudo')
 	os.system('chmod 700 /data/data/com.termux/files/usr/bin/sudo')
 	backtomenu_option()
@@ -530,21 +576,24 @@ def ubuntu():
 	print '\n###### Installing Ubuntu'
 	install_pacakage('apt', ['git', 'python2'])
 	os.system('git clone https://github.com/Neo-Oli/termux-ubuntu')
-	os.system('mv termux-ubuntu ~ && cd ~/termux-ubuntu && bash ubuntu.sh')
+	if allmodule == 0:
+		os.system('mv termux-ubuntu ~ && cd ~/termux-ubuntu && bash ubuntu.sh')
 	backtomenu_option()
 
 def fedora():
 	print '\n###### Installing Fedora'
 	install_pacakage('apt', ['git', 'wget'])
 	os.system('wget https://raw.githubusercontent.com/nmilosev/termux-fedora/master/termux-fedora.sh')
-	os.system('mv termux-fedora.sh ~')
+	if allmodule == 0:
+		os.system('mv termux-fedora.sh ~')
 	backtomenu_option()
 
 def nethunter():
 	print '\n###### Installing Kali NetHunter'
 	install_pacakage('apt', ['git'])
 	os.system('git clone https://github.com/Hax4us/Nethunter-In-Termux')
-	os.system('mv Nethunter-In-Termux ~')
+	if allmodule == 0:
+		os.system('mv Nethunter-In-Termux ~')
 	backtomenu_option()
 
 def blackbox():
@@ -552,7 +601,8 @@ def blackbox():
 	install_pacakage('apt', ['python2', 'git'])
 	install_pacakage('pip2', ['python2', 'optparse', 'passlib'])
 	os.system('git clone https://github.com/jothatron/blackbox')
-	os.system('mv blackbox ~')
+	if allmodule == 0:
+		os.system('mv blackbox ~')
 	backtomenu_option()
 
 def xattacker():
@@ -560,14 +610,16 @@ def xattacker():
 	install_pacakage('apt', ['git', 'perl'])
 	install_pacakage('cpnm', ['HTTP::Request', 'LWP::Useragent'])
 	os.system('git clone https://github.com/Moham3dRiahi/XAttacker')
-	os.system('mv XAttacker ~')
+	if allmodule == 0:
+		os.system('mv XAttacker ~')
 	backtomenu_option()
 
 def vcrt():
 	print '\n###### Installing VCRT'
 	install_pacakage('apt', ['git', 'python2'])
 	os.system('git clone https://github.com/LOoLzeC/Evil-create-framework')
-	os.system('mv Evil-create-framework ~')
+	if allmodule == 0:
+		os.system('mv Evil-create-framework ~')
 	backtomenu_option()
 
 def socfish():
@@ -575,14 +627,16 @@ def socfish():
 	install_pacakage('apt', ['git', 'python2'])
 	install_pacakage('pip2', ['wget'])
 	os.system('git clone https://github.com/UndeadSec/SocialFish')
-	os.system('mv SocialFish ~')
+	if allmodule == 0:
+		os.system('mv SocialFish ~')
 	backtomenu_option()
 
 def ecode():
 	print '\n###### Installing ECode'
 	install_pacakage('apt', ['php', 'git'])
 	os.system('git clone https://github.com/Cvar1984/Ecode')
-	os.system('mv Ecode ~')
+	if allmodule == 0:
+		os.system('mv Ecode ~')
 	backtomenu_option()
 
 def hashzer():
@@ -590,7 +644,8 @@ def hashzer():
 	install_pacakage('apt', ['python2', 'git'])
 	install_pacakage('pip2', ['requests'])
 	os.system('git clone https://github.com/Anb3rSecID/Hashzer')
-	os.system('mv Hashzer ~')
+	if allmodule == 0:
+		os.system('mv Hashzer ~')
 	backtomenu_option()
 
 def xsstrike():
@@ -598,7 +653,8 @@ def xsstrike():
 	install_pacakage('apt', ['python2', 'git'])
 	install_pacakage('pip2', ['fuzzywuzzy', 'prettytable', 'mechanize', 'HTMLParser'])
 	os.system('git clone https://github.com/UltimateHackers/XSStrike')
-	os.system('mv XSStrike ~')
+	if allmodule == 0:
+		os.system('mv XSStrike ~')
 	backtomenu_option()
 
 def breacher():
@@ -606,14 +662,16 @@ def breacher():
 	install_pacakage('apt', ['python2', 'git'])
 	install_pacakage('pip2', ['requests', 'argparse'])
 	os.system('git clone https://github.com/UltimateHackers/Breacher')
-	os.system('mv Breacher ~')
+	if allmodule == 0:
+		os.system('mv Breacher ~')
 	backtomenu_option()
 
 def stylemux():
 	print '\n###### Installing Termux-Styling'
 	install_pacakage('apt', ['git'])
 	os.system('git clone https://github.com/BagazMukti/Termux-Styling-Shell-Script')
-	os.system('mv Termux-Styling-Shell-Script ~')
+	if allmodule == 0:
+		os.system('mv Termux-Styling-Shell-Script ~')
 	backtomenu_option()
 
 def txtool():
@@ -621,21 +679,24 @@ def txtool():
 	install_pacakage('apt', ['git', 'python2', 'nmap', 'php', 'curl'])
 	install_pacakage('pip2', ['requests'])
 	os.system('git clone https://github.com/kuburan/txtool')
-	os.system('mv txtool ~')
+	if allmodule == 0:
+		os.system('mv txtool ~')
 	backtomenu_option()
 
 def passgencvar():
 	print '\n###### Installing PassGen'
 	install_pacakage('apt', ['git', 'php'])
 	os.system('git clone https://github.com/Cvar1984/PassGen')
-	os.system('mv PassGen ~')
+	if allmodule == 0:
+		os.system('mv PassGen ~')
 	backtomenu_option()
 
 def owscan():
 	print '\n###### Installing OWScan'
 	install_pacakage('apt', ['git', 'php'])
 	os.system('git clone https://github.com/Gameye98/OWScan')
-	os.system('mv OWScan ~')
+	if allmodule == 0:
+		os.system('mv OWScan ~')
 	backtomenu_option()
 
 def sanlen():
@@ -643,7 +704,8 @@ def sanlen():
 	install_pacakage('apt', ['git', 'python2'])
 	install_pacakage('pip2', ['requests'])
 	os.system('git clone https://github.com/Gameye98/santet-online')
-	os.system('mv santet-online ~')
+	if allmodule == 0:
+		os.system('mv santet-online ~')
 	backtomenu_option()
 
 def spazsms():
@@ -651,7 +713,8 @@ def spazsms():
 	os.system('apt update && apt upgrade')
 	os.system('apt install git python2 && pip2 install requests')
 	os.system('git clone https://github.com/Gameye98/SpazSMS')
-	os.system('mv SpazSMS ~')
+	if allmodule == 0:
+		os.system('mv SpazSMS ~')
 	backtomenu_option()
 
 def hasher():
@@ -659,7 +722,8 @@ def hasher():
 	install_pacakage('apt', ['git', 'python2'])
 	install_pacakage('pip2', ['passlib', 'binascii', 'progressbar'])
 	os.system('git clone https://github.com/ciku370/hasher')
-	os.system('mv hasher ~')
+	if allmodule == 0:
+		os.system('mv hasher ~')
 	backtomenu_option()
 
 def hashgenerator():
@@ -667,7 +731,8 @@ def hashgenerator():
 	install_pacakage('apt', ['git', 'python2'])
 	install_pacakage('pip2', ['passlib', 'progressbar'])
 	os.system('git clone https://github.com/ciku370/hash-generator')
-	os.system('mv hash-generator ~')
+	if allmodule == 0:
+		os.system('mv hash-generator ~')
 	backtomenu_option()
 
 def kodork():
@@ -675,14 +740,16 @@ def kodork():
 	install_pacakage('apt', ['git', 'python2'])
 	install_pacakage('pip2', ['urllib2'])
 	os.system('git clone https://github.com/ciku370/ko-dork')
-	os.system('mv ko-dork ~')
+	if allmodule == 0:
+		os.system('mv ko-dork ~')
 	backtomenu_option()
 
 def snitch():
 	print '\n###### Installing snitch'
 	install_pacakage('apt', ['git', 'python2'])
 	os.system('git clone https://github.com/Smaash/snitch')
-	os.system('mv snitch ~')
+	if allmodule == 0:
+		os.system('mv snitch ~')
 	backtomenu_option()
 
 def osif():
@@ -690,14 +757,16 @@ def osif():
 	install_pacakage('apt', ['git', 'python2'])
 	install_pacakage('pip2', ['requests'])
 	os.system('git clone https://github.com/ciku370/OSIF')
-	os.system('mv OSIF ~')
+	if allmodule == 0:
+		os.system('mv OSIF ~')
 	backtomenu_option()
 
 def nk26():
 	print '\n###### Installing nk26'
 	install_pacakage('apt', ['git', 'php'])
 	os.system('git clone https://github.com/milio48/nk26')
-	os.system('mv nk26 ~')
+	if allmodule == 0:
+		os.system('mv nk26 ~')
 	backtomenu_option()
 
 def devploit():
@@ -705,28 +774,32 @@ def devploit():
 	install_pacakage('apt', ['git', 'python2'])
 	install_pacakage('pip2', ['urllib2'])
 	os.system('git clone https://github.com/joker25000/Devploit')
-	os.system('mv Devploit ~')
+	if allmodule == 0:
+		os.system('mv Devploit ~')
 	backtomenu_option()
 
 def hasherdotid():
 	print '\n###### Installing Hasherdotid'
 	install_pacakage('apt', ['git', 'python2'])
 	os.system('git clone https://github.com/galauerscrew/hasherdotid')
-	os.system('mv hasherdotid ~')
+	if allmodule == 0:
+		os.system('mv hasherdotid ~')
 	backtomenu_option()
 
 def namechk():
 	print '\n###### Installing Namechk'
 	install_pacakage('apt', ['git'])
 	os.system('git clone https://github.com/HA71/Namechk')
-	os.system('mv Namechk ~')
+	if allmodule == 0:
+		os.system('mv Namechk ~')
 	backtomenu_option()
 
 def xlPy():
 	print '\n###### Installing xl-py'
 	install_pacakage('apt', ['git', 'python'])
 	os.system('git clone https://github.com/albertoanggi/xl-py')
-	os.system('mv xl-py ~')
+	if allmodule == 0:
+		os.system('mv xl-py ~')
 	backtomenu_option()
 
 def beanshell():
@@ -742,7 +815,8 @@ def msfpg():
 	print '\n###### Installing MSF-Pg'
 	install_pacakage('apt', ['git'])
 	os.system('git clone https://github.com/haxzsadik/MSF-Pg')
-	os.system('mv MSF-Pg ~')
+	if allmodule == 0:
+		os.system('mv MSF-Pg ~')
 	print "###### Done"
 	backtomenu_option()
 
@@ -751,7 +825,8 @@ def touchurl():
 	install_pacakage('apt', ['git', 'python'])
 	install_pacakage('pip', ['colorama', 'parse'])
 	os.system('git clone https://github.com/SkyKnight-Team/TouchUrl')
-	os.system('mv TouchUrl ~')
+	if allmodule == 0:
+		os.system('mv TouchUrl ~')
 	print "###### Done"
 	backtomenu_option()
 
@@ -759,7 +834,8 @@ def webconn():
 	print '\n###### Installing WebConn'
 	install_pacakage('apt', ['git', 'python'])
 	os.system('git clone https://github.com/SkyKnight-Team/WebConn')
-	os.system('mv WebConn ~')
+	if allmodule == 0:
+		os.system('mv WebConn ~')
 	print "###### Done"
 	backtomenu_option()
 
@@ -801,14 +877,16 @@ def fade():
 	install_pacakage('apt', ['python2', 'git'])
 	install_pacakage('pip2', ['requests'])
 	os.system('git clone https://github.com/Gameye98/FaDe')
-	os.system('mv FaDe ~')
+	if allmodule == 0:
+		os.system('mv FaDe ~')
 	backtomenu_option()
 
 def ginf():
 	print '\n###### Installing GINF'
 	install_pacakage('apt', ['git', 'php'])
 	os.system('git clone https://github.com/Gameye98/GINF')
-	os.system('mv GINF ~')
+	if allmodule == 0:
+		os.system('mv GINF ~')
 	backtomenu_option()
 
 def auxile():
@@ -816,14 +894,16 @@ def auxile():
 	install_pacakage('apt', ['git', 'python2'])
 	install_pacakage('pip2', ['requests', 'bs4', 'pexpect'])
 	os.system('git clone https://github.com/CiKu370/AUXILE')
-	os.system('mv AUXILE ~')
+	if allmodule == 0:
+		os.system('mv AUXILE ~')
 	backtomenu_option()
 
 def inther():
 	print '\n###### Installing inther'
 	install_pacakage('apt', ['git', 'ruby'])
 	os.system('git clone https://github.com/Gameye98/inther')
-	os.system('mv inther ~')
+	if allmodule == 0:
+		os.system('mv inther ~')
 	backtomenu_option()
 
 def hpb():
@@ -839,15 +919,16 @@ def DDosy():
 	print '\n###### Installing DDOSy'
 	install_pacakage('apt', ['python2', 'git'])
 	os.system('git clone https://github.com/Sanix-Darker/DDosy')
-	os.system('mv DDosy ~')
+	if allmodule == 0:
+		os.system('mv DDosy ~')
 	backtomenu_option()
 
 def getAllModule(category):
 	global allmodule
 	allmodule = 1
-	print "   Installing all "+category+" Modules on LazyMux ...\n"
-	os.system('rm -rf '+category+' && mkdir '+category+' && cd '+category+' ')
 	if category == "Information_Gathering":
+		print "   Installing all Information_Gathering Modules on LazyMux ...\n"
+		os.system('rm -rf Information_Gathering && mkdir Information_Gathering && cd Information_Gathering ')
 		nmap()
 		red_hawk()
 		dtect()
@@ -874,6 +955,8 @@ def getAllModule(category):
 		inther()
 		ginf()
 	elif category == "Vulnerability_Scanner":
+		print "   Installing all Vulnerability_Scanner Modules on LazyMux ...\n"
+		os.system('rm -rf Vulnerability_Scanner && mkdir Vulnerability_Scanner && cd Vulnerability_Scanner ')
 		nmap()
 		androZenmap()
 		astraNmap()
@@ -898,6 +981,8 @@ def getAllModule(category):
 		xattacker()
 		owscan()
 	elif category == "Stress_Testing":
+		print "   Installing all Stress_Testing Modules on LazyMux ...\n"
+		os.system('rm -rf Stress_Testing && mkdir Stress_Testing && cd Stress_Testing ')
 		torshammer()
 		slowloris()
 		fl00d12()
@@ -910,6 +995,8 @@ def getAllModule(category):
 		sanlen()
 		DDosy()
 	elif category == "Password_Attacks":
+		print "   Installing all Password_Attacks Modules on LazyMux ...\n"
+		os.system('rm -rf Password_Attacks && mkdir Password_Attacks && cd Password_Attacks ')
 		hydra()
 		facebook_bruteForce()
 		facebook_BruteForce()
@@ -929,6 +1016,8 @@ def getAllModule(category):
 		nk26()
 		hasherdotid()
 	elif category == "Web_Hacking":
+		print "   Installing all Web_Hacking Modules on LazyMux ...\n"
+		os.system('rm -rf Web_Hacking && mkdir Web_Hacking && cd Web_Hacking ')
 		sqlmap()
 		webdav()
 		xGans()
@@ -953,6 +1042,8 @@ def getAllModule(category):
 		hpb()
 		inther()
 	elif category == "Exploitation_Tools":
+		print "   Installing all Exploitation_Tools Modules on LazyMux ...\n"
+		os.system('rm -rf Exploitation_Tools && mkdir Exploitation_Tools && cd Exploitation_Tools ')
 		metasploit()
 		commix() 
 		sqlmap() 
@@ -967,6 +1058,8 @@ def getAllModule(category):
 		msfpg() 
 		binploit()
 	elif category == "Sniffing_and_Spoofing":
+		print "   Installing all Sniffing_and_Spoofing Modules on LazyMux ...\n"
+		os.system('rm -rf Sniffing_and_Spoofing && mkdir Sniffing_and_Spoofing && cd Sniffing_and_Spoofing ')
 		knockmail()
 		spammer_grab()
 		hac()
@@ -975,6 +1068,8 @@ def getAllModule(category):
 		sanlen()
 		spazsms()
 	elif category == "Other":
+		print "   Installing all Other Modules on LazyMux ...\n"
+		os.system('rm -rf Other && mkdir Other && cd Other ')
 		spiderbot()
 		ngrok()
 		sudo()
@@ -990,5 +1085,8 @@ def getAllModule(category):
 		webconn()
 		touchurl()
 		textr()
+	else:
+		print " Nothing selected."
 	os.system('cd ../')
 	allmodule = 0
+	backtomenu_option()
