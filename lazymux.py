@@ -16,7 +16,16 @@ def main():
 	print "   [06] Exploitation Tools"
 	print "   [07] Sniffing & Spoofing"
 	print "   [08] Other\n"
-	print "   [10] Exit the Lazymux\n"
+	print "   ------------------------------------------\n"
+	print "   [09] Get All Information Gathering Modules Once"
+	print "   [10] Get All Vulnerability Scanner Modules Once"
+	print "   [11] Get All Stress Testing Modules Once"
+	print "   [12] Get All Password Attacks Modules Once"
+	print "   [13] Get All Web Hacking Modules Once"
+	print "   [14] Get All Exploitation Tools Modules Once"
+	print "   [15] Get All Sniffing & Spoofing Modules Once"
+	print "   [16] Get All Other Modules Once\n"
+	print "   [17] Exit the Lazymux\n"
 	lazymux = raw_input("lzmx > ")
 	
 	if lazymux == "1" or lazymux == "01":
@@ -510,7 +519,23 @@ def main():
 			timeout(2)
 			restart_program()
 	
+	elif lazymux == "9" or lazymux == "09":
+		getAllModule("Information_Gathering")
 	elif lazymux == "10":
+		getAllModule("Vulnerability_Scanner")
+	elif lazymux == "11":
+		getAllModule("Stress_Testing")
+	elif lazymux == "12":
+		getAllModule("Password_Attacks")
+	elif lazymux == "13":
+		getAllModule("Web_Hacking")
+	elif lazymux == "14":
+		getAllModule("Exploitation_Tools")
+	elif lazymux == "15":
+		getAllModule("Sniffing_and_Spoofing")
+	elif lazymux == "16":
+		getAllModule("Other")
+	elif lazymux == "17":
 		sys.exit()
 	
 	else:

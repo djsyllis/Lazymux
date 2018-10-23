@@ -15,9 +15,9 @@ git clone https://github.com/Gameye98/Lazymux
  
 cd Lazymux
  
-sh install.sh 
+sh start.sh 
 # OR
-./install.sh
+./start.sh
 ```
 
 #### Contributors
