@@ -837,7 +837,7 @@ def DDosy():
 	os.system('mv DDosy ~')
 	backtomenu_option()
 
-def getAllModule(category)
+def getAllModule(category):
 	print "   Installing all "+category+" Modules on LazyMux ...\n"
 	os.system('rm -rf '+category+' && mkdir '+category+' && cd '+category+' ')
 

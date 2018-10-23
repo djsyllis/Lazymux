@@ -14,10 +14,10 @@ Lazymux tools installer is very easy to use, only provided for lazy termux users
 git clone https://github.com/Gameye98/Lazymux
  
 cd Lazymux
- 
-sh start.sh 
+
+python2 lazymux.py
 # OR
-./start.sh
+python lazymux.py
 ```
 
 #### Contributors
