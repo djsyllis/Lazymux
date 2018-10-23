@@ -17,6 +17,7 @@ backtomenu_banner = """
   [99] Back to main menu
   [00] Exit the Lazymux
 """
+allmodule = 0
 def install_pacakage(installer, packs):
 	if installer == 'apt':
 		os.system('apt update && apt upgrade')
@@ -33,18 +34,21 @@ def restart_program():
 	curdir = os.getcwd()
 
 def backtomenu_option():
-	print '###### Done'
-	print backtomenu_banner
-	backtomenu = raw_input("lzmx > ")
-	
-	if backtomenu == "99":
-		restart_program()
-	elif backtomenu == "00":
-		sys.exit()
+	if(allmodule == 0):
+		print '###### Done'
+		print backtomenu_banner
+		backtomenu = raw_input("lzmx > ")
+		
+		if backtomenu == "99":
+			restart_program()
+		elif backtomenu == "00":
+			sys.exit()
+		else:
+			print "\nERROR: Wrong Input"
+			time.sleep(2)
+			restart_program()
 	else:
-		print "\nERROR: Wrong Input"
-		time.sleep(2)
-		restart_program()
+		print '###### Processing...\n'
 
 def banner():
 	print lazymux_banner
@@ -840,7 +844,8 @@ def DDosy():
 def getAllModule(category):
 	print "   Installing all "+category+" Modules on LazyMux ...\n"
 	os.system('rm -rf '+category+' && mkdir '+category+' && cd '+category+' ')
-
+    global allmodule
+    allmodule = 1
 	if category == "Information_Gathering":
 		nmap()
 		red_hawk()
@@ -985,3 +990,4 @@ def getAllModule(category):
 		touchurl()
 		textr()
 	os.system('cd ../')
+	allmodule = 0
