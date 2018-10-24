@@ -928,7 +928,8 @@ def getAllModule(category):
 	allmodule = 1
 	if category == "Information_Gathering":
 		print "   Installing all Information_Gathering Modules on LazyMux ...\n"
-		os.system('rm -rf Information_Gathering && mkdir Information_Gathering && cd Information_Gathering ')
+		os.system('rm -rf Information_Gathering && mkdir Information_Gathering')
+		os.system('cd Information_Gathering ')
 		nmap()
 		red_hawk()
 		dtect()
@@ -956,7 +957,8 @@ def getAllModule(category):
 		ginf()
 	elif category == "Vulnerability_Scanner":
 		print "   Installing all Vulnerability_Scanner Modules on LazyMux ...\n"
-		os.system('rm -rf Vulnerability_Scanner && mkdir Vulnerability_Scanner && cd Vulnerability_Scanner ')
+		os.system('rm -rf Vulnerability_Scanner && mkdir Vulnerability_Scanner')
+		os.system('cd Vulnerability_Scanner ')
 		nmap()
 		androZenmap()
 		astraNmap()
@@ -982,7 +984,8 @@ def getAllModule(category):
 		owscan()
 	elif category == "Stress_Testing":
 		print "   Installing all Stress_Testing Modules on LazyMux ...\n"
-		os.system('rm -rf Stress_Testing && mkdir Stress_Testing && cd Stress_Testing ')
+		os.system('rm -rf Stress_Testing && mkdir Stress_Testing ')
+		os.system('cd Stress_Testing ')
 		torshammer()
 		slowloris()
 		fl00d12()
@@ -996,7 +999,8 @@ def getAllModule(category):
 		DDosy()
 	elif category == "Password_Attacks":
 		print "   Installing all Password_Attacks Modules on LazyMux ...\n"
-		os.system('rm -rf Password_Attacks && mkdir Password_Attacks && cd Password_Attacks ')
+		os.system('rm -rf Password_Attacks && mkdir Password_Attacks')
+		os.system('cd Password_Attacks ')
 		hydra()
 		facebook_bruteForce()
 		facebook_BruteForce()
@@ -1017,7 +1021,8 @@ def getAllModule(category):
 		hasherdotid()
 	elif category == "Web_Hacking":
 		print "   Installing all Web_Hacking Modules on LazyMux ...\n"
-		os.system('rm -rf Web_Hacking && mkdir Web_Hacking && cd Web_Hacking ')
+		os.system('rm -rf Web_Hacking && mkdir Web_Hacking ')
+		os.system('cd Web_Hacking ')
 		sqlmap()
 		webdav()
 		xGans()
@@ -1043,7 +1048,8 @@ def getAllModule(category):
 		inther()
 	elif category == "Exploitation_Tools":
 		print "   Installing all Exploitation_Tools Modules on LazyMux ...\n"
-		os.system('rm -rf Exploitation_Tools && mkdir Exploitation_Tools && cd Exploitation_Tools ')
+		os.system('rm -rf Exploitation_Tools && mkdir Exploitation_Tools')
+		os.system('cd Exploitation_Tools ')
 		metasploit()
 		commix() 
 		sqlmap() 
@@ -1059,7 +1065,8 @@ def getAllModule(category):
 		binploit()
 	elif category == "Sniffing_and_Spoofing":
 		print "   Installing all Sniffing_and_Spoofing Modules on LazyMux ...\n"
-		os.system('rm -rf Sniffing_and_Spoofing && mkdir Sniffing_and_Spoofing && cd Sniffing_and_Spoofing ')
+		os.system('rm -rf Sniffing_and_Spoofing && mkdir Sniffing_and_Spoofing')
+		os.system('cd Sniffing_and_Spoofing ')
 		knockmail()
 		spammer_grab()
 		hac()
@@ -1069,7 +1076,8 @@ def getAllModule(category):
 		spazsms()
 	elif category == "Other":
 		print "   Installing all Other Modules on LazyMux ...\n"
-		os.system('rm -rf Other && mkdir Other && cd Other ')
+		os.system('rm -rf Other && mkdir Other')
+		os.system('cd Other')
 		spiderbot()
 		ngrok()
 		sudo()
