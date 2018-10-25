@@ -719,12 +719,12 @@ def SocialBox():
 	print '\n###### Installing SocialBox'
 	install_pacakage('apt', ['git'])
 	os.system('git clone https://github.com/TunisianEagles/SocialBox.git')
-	os.system('cd SocialBox')
+	os.system('mv SocialBox ~')
+	os.system('cd ../SocialBox')
 	os.system('chmod +x SocialBox.sh')
 	os.system('chmod +x install-sb.sh')
 	os.system('sh install-sb.sh')
 	os.system('sh SocialBox.sh')
-	os.system('mv SocialBox ~')
 	backtomenu_option()
 
 def namechk():
