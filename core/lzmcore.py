@@ -715,6 +715,18 @@ def hasherdotid():
 	os.system('mv hasherdotid ~')
 	backtomenu_option()
 
+def SocialBox():
+	print '\n###### Installing SocialBox'
+	install_pacakage('apt', ['git'])
+	os.system('git clone https://github.com/TunisianEagles/SocialBox.git')
+	os.system('cd SocialBox')
+	os.system('chmod +x SocialBox.sh')
+	os.system('chmod +x install-sb.sh')
+	os.system('sh install-sb.sh')
+	os.system('sh SocialBox.sh')
+	os.system('mv SocialBox ~')
+	backtomenu_option()
+
 def namechk():
 	print '\n###### Installing Namechk'
 	install_pacakage('apt', ['git'])
@@ -938,6 +950,7 @@ def getAllModule(category):
 		hashgenerator()
 		nk26()
 		hasherdotid()
+		SocialBox()
 	elif category == "Web_Hacking":
 		print "### Installing all Web_Hacking Modules on LazyMux \n"
 		# os.system('rm -rf Web_Hacking && mkdir Web_Hacking ')

@@ -256,7 +256,8 @@ def main():
 		print "    [15] Hasher"
 		print "    [16] Hash-Generator"
 		print "    [17] nk26"
-		print "    [18] Hasherdotid\n"
+		print "    [18] Hasherdotid"
+		print "    [19] SocialBox\n"
 		print "    [00] Back to main menu\n"
 		passtak = raw_input("lzmx > ")
 		
@@ -296,6 +297,8 @@ def main():
 			nk26()
 		elif passtak == "18":
 			hasherdotid()
+		elif passtak == "19":
+			SocialBox()
 		elif passtak == "00" or passtak == "0":
 			restart_program()
 		else:
