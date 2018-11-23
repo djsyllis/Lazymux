@@ -1,5 +1,6 @@
 # Lazymux
-Lazymux tools installer is very easy to use, only provided for lazy termux users.
+Lazymux tools installer is very easy to use, only provided for lazy termux users; it's huge list of Many Hacking tools and PEN TESTING!
+**NOTE: Am not Responsible of bad use of this project.**
 
 ## Screenshot
 <img src="core/lazymux2.png">
@@ -20,6 +21,8 @@ python2 lazymux.py
 python lazymux.py
 ```
 
-#### Contributors
+#### Authors
 • [Gameye98](https://github.com/Gameye98)
+
+#### Contributors
 • [Sanix-darker](https://github.com/Sanix-Darker)
